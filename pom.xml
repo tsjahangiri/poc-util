@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.poc</groupId>
+    <artifactId>poc-util</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <scm>
+        <connection>scm:git:https://github.com/tsjahangiri/poc-util.git</connection>
+        <developerConnection>scm:git:https://github.com/tsjahangiri/poc-util.git</developerConnection>
+        <url>https://github.com/tsjahangiri/poc-util</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <url>
+                https://maven.pkg.github.com/tsjahangiri/poc-util
+            </url>
+        </repository>
+    </distributionManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>io.github.mavenplugins</groupId>
+                <artifactId>unleash-maven-plugin</artifactId>
+                <version>3.3.0</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>io.github.mavenplugins</groupId>
+                        <artifactId>unleash-scm-provider-git</artifactId>
+                        <version>3.3.0</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <tagNamePattern>
+                        @{project.artifactId}-@{project.version}
+                    </tagNamePattern>
+                    <scmMessagePrefix>[unleash-release]</scmMessagePrefix>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
