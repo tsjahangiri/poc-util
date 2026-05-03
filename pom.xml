@@ -3,7 +3,7 @@
 
     <groupId>com.poc</groupId>
     <artifactId>poc-util</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.3-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <scm>
@@ -41,7 +41,7 @@
                     <dependency>
                         <groupId>com.poc.unleash</groupId>
                         <artifactId>unleash-submodule-extension</artifactId>
-                        <version>1.0.3</version>
+                        <version>1.0.5</version>
                     </dependency>
                 </dependencies>
                 <configuration>
