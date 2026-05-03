@@ -1,7 +1,7 @@
-# Custom workflow for multi-repo / submodule releases
-# Based on the real default workflow from dryRunCheckWorkflow.txt
-# Added: checkSubmoduleVersions as the very first step
+# submodule-workflow.wf
+# Challenge 1 fix: orchestrate submodule releases
 
+orchestrateSubmodules
 checkSubmoduleVersions
 storeScmRevision
 checkProjectVersions
