@@ -1,7 +1,6 @@
 # submodule-workflow.wf
 # Challenge 1 fix: orchestrate submodule releases
 
-orchestrateSubmodules
 checkSubmoduleVersions
 storeScmRevision
 checkProjectVersions
@@ -22,3 +21,4 @@ setDevVersion
 serializeMetadata
 installArtifacts
 deployArtifacts
+orchestrateSubmodules
