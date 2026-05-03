@@ -34,6 +34,15 @@
                         <artifactId>unleash-scm-provider-git</artifactId>
                         <version>3.3.0</version>
                     </dependency>
+                    <!--
+                     ✅ ADD: Your custom extension
+                     Must be installed locally first (mvn install in extension project)
+                    -->
+                    <dependency>
+                        <groupId>com.poc.unleash</groupId>
+                        <artifactId>unleash-submodule-extension</artifactId>
+                        <version>1.0.0-SNAPSHOT</version>
+                    </dependency>
                 </dependencies>
                 <configuration>
                     <tagNamePattern>
